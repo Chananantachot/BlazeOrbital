@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BlazeOrbital.CentralServer.props" />
+</Project>

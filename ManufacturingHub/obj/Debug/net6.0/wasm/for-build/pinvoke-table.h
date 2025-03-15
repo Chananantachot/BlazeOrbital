@@ -1,0 +1,610 @@
+// GENERATED FILE, DO NOT MODIFY
+
+int CompressionNative_Crc32 (int,int,int);
+int CompressionNative_Deflate (int,int);
+int CompressionNative_DeflateEnd (int);
+int CompressionNative_DeflateInit2_ (int,int,int,int,int,int);
+int CompressionNative_Inflate (int,int);
+int CompressionNative_InflateEnd (int);
+int CompressionNative_InflateInit2_ (int,int);
+void generate_qr_code (int,int,int,int,int);
+void GlobalizationNative_ChangeCase (int,int,int,int,int);
+void GlobalizationNative_ChangeCaseInvariant (int,int,int,int,int);
+void GlobalizationNative_ChangeCaseTurkish (int,int,int,int,int);
+void GlobalizationNative_CloseSortHandle (int);
+int GlobalizationNative_CompareString (int,int,int,int,int,int);
+int GlobalizationNative_EndsWith (int,int,int,int,int,int,int);
+int GlobalizationNative_EnumCalendarInfo (int, int, int, int, int);
+int GlobalizationNative_GetCalendarInfo (int,int,int,int,int);
+int GlobalizationNative_GetCalendars (int,int,int);
+int GlobalizationNative_GetDefaultLocaleName (int,int);
+int GlobalizationNative_GetICUVersion ();
+int GlobalizationNative_GetJapaneseEraStartDate (int,int,int,int);
+int GlobalizationNative_GetLatestJapaneseEra ();
+int GlobalizationNative_GetLocaleInfoGroupingSizes (int,int,int,int);
+int GlobalizationNative_GetLocaleInfoInt (int,int,int);
+int GlobalizationNative_GetLocaleInfoString (int,int,int,int,int);
+int GlobalizationNative_GetLocaleName (int,int,int);
+int GlobalizationNative_GetLocales (int,int);
+int GlobalizationNative_GetLocaleTimeFormat (int,int,int,int);
+int GlobalizationNative_GetSortHandle (int,int);
+int GlobalizationNative_GetSortKey (int,int,int,int,int,int);
+int GlobalizationNative_GetSortVersion (int);
+int GlobalizationNative_IndexOf (int,int,int,int,int,int,int);
+void GlobalizationNative_InitICUFunctions (int,int,int,int);
+void GlobalizationNative_InitOrdinalCasingPage (int,int);
+int GlobalizationNative_IsNormalized (int,int,int);
+int GlobalizationNative_IsPredefinedLocale (int);
+int GlobalizationNative_LastIndexOf (int,int,int,int,int,int,int);
+int GlobalizationNative_LoadICU ();
+int GlobalizationNative_NormalizeString (int,int,int,int,int);
+int GlobalizationNative_StartsWith (int,int,int,int,int,int,int);
+int GlobalizationNative_ToAscii (int,int,int,int,int);
+int GlobalizationNative_ToUnicode (int,int,int,int,int);
+int sqlite3_aggregate_context (int,int);
+int sqlite3_aggregate_count (int);
+int sqlite3_backup_finish (int);
+int sqlite3_backup_init (int,int,int,int);
+int sqlite3_backup_pagecount (int);
+int sqlite3_backup_remaining (int);
+int sqlite3_backup_step (int,int);
+int sqlite3_bind_blob (int,int,int,int,int);
+int sqlite3_bind_double (int,int,double);
+int sqlite3_bind_int (int,int,int);
+int sqlite3_bind_int64 (int,int,int64_t);
+int sqlite3_bind_null (int,int);
+int sqlite3_bind_parameter_count (int);
+int sqlite3_bind_parameter_index (int,int);
+int sqlite3_bind_parameter_name (int,int);
+int sqlite3_bind_text (int,int,int,int,int);
+int sqlite3_bind_text16 (int,int,int,int,int);
+int sqlite3_bind_zeroblob (int,int,int);
+int sqlite3_blob_bytes (int);
+int sqlite3_blob_close (int);
+int sqlite3_blob_open (int,int,int,int,int64_t,int,int);
+int sqlite3_blob_read (int,int,int,int);
+int sqlite3_blob_reopen (int,int64_t);
+int sqlite3_blob_write (int,int,int,int);
+int sqlite3_busy_timeout (int,int);
+int sqlite3_changes (int);
+int sqlite3_clear_bindings (int);
+int sqlite3_close (int);
+int sqlite3_close_v2 (int);
+int sqlite3_column_blob (int,int);
+int sqlite3_column_bytes (int,int);
+int sqlite3_column_count (int);
+int sqlite3_column_decltype (int,int);
+double sqlite3_column_double (int,int);
+int sqlite3_column_int (int,int);
+int64_t sqlite3_column_int64 (int,int);
+int sqlite3_column_name (int,int);
+int sqlite3_column_text (int,int);
+int sqlite3_column_type (int,int);
+int sqlite3_commit_hook (int,int,int);
+int sqlite3_compileoption_get (int);
+int sqlite3_compileoption_used (int);
+int sqlite3_complete (int);
+int sqlite3_create_collation (int,int,int,int,int);
+int sqlite3_create_function_v2 (int,int,int,int,int,int,int,int,int);
+int sqlite3_data_count (int);
+int sqlite3_db_filename (int,int);
+int sqlite3_db_handle (int);
+int sqlite3_db_readonly (int,int);
+int sqlite3_db_status (int,int,int,int,int);
+int sqlite3_enable_load_extension (int,int);
+int sqlite3_enable_shared_cache (int);
+int sqlite3_errcode (int);
+int sqlite3_errmsg (int);
+int sqlite3_errstr (int);
+int sqlite3_exec (int,int,int,int,int);
+int sqlite3_extended_errcode (int);
+int sqlite3_extended_result_codes (int,int);
+int sqlite3_file_control (int,int,int,int);
+int sqlite3_finalize (int);
+void sqlite3_free (int);
+int sqlite3_get_autocommit (int);
+int64_t sqlite3_hard_heap_limit64 (int64_t);
+int sqlite3_initialize ();
+void sqlite3_interrupt (int);
+int sqlite3_keyword_count ();
+int sqlite3_keyword_name (int,int,int);
+int64_t sqlite3_last_insert_rowid (int);
+int sqlite3_libversion ();
+int sqlite3_libversion_number ();
+int sqlite3_limit (int,int,int);
+void sqlite3_log (int,int);
+int sqlite3_malloc (int);
+int64_t sqlite3_memory_highwater (int);
+int64_t sqlite3_memory_used ();
+int sqlite3_next_stmt (int,int);
+int sqlite3_open (int,int);
+int sqlite3_open_v2 (int,int,int,int);
+int sqlite3_prepare_v2 (int,int,int,int,int);
+int sqlite3_prepare_v3 (int,int,int,int,int,int);
+int sqlite3_profile (int,int,int);
+void sqlite3_progress_handler (int,int,int,int);
+int sqlite3_realloc (int,int);
+int sqlite3_reset (int);
+void sqlite3_result_blob (int,int,int,int);
+void sqlite3_result_double (int,double);
+void sqlite3_result_error (int,int,int);
+void sqlite3_result_error_code (int,int);
+void sqlite3_result_error_nomem (int);
+void sqlite3_result_error_toobig (int);
+void sqlite3_result_int (int,int);
+void sqlite3_result_int64 (int,int64_t);
+void sqlite3_result_null (int);
+void sqlite3_result_text (int,int,int,int);
+void sqlite3_result_zeroblob (int,int);
+int sqlite3_rollback_hook (int,int,int);
+int sqlite3_set_authorizer (int,int,int);
+int sqlite3_shutdown ();
+int64_t sqlite3_soft_heap_limit64 (int64_t);
+int sqlite3_sourceid ();
+int sqlite3_sql (int);
+int sqlite3_status (int,int,int,int);
+int sqlite3_step (int);
+int sqlite3_stmt_busy (int);
+int sqlite3_stmt_isexplain (int);
+int sqlite3_stmt_readonly (int);
+int sqlite3_stmt_status (int,int,int);
+int sqlite3_stricmp (int,int);
+int sqlite3_strnicmp (int,int,int);
+int sqlite3_table_column_metadata (int,int,int,int,int,int,int,int,int);
+int sqlite3_threadsafe ();
+int sqlite3_total_changes (int);
+int sqlite3_trace (int,int,int);
+int sqlite3_update_hook (int,int,int);
+int sqlite3_user_data (int);
+int sqlite3_value_blob (int);
+int sqlite3_value_bytes (int);
+double sqlite3_value_double (int);
+int sqlite3_value_int (int);
+int64_t sqlite3_value_int64 (int);
+int sqlite3_value_text (int);
+int sqlite3_value_type (int);
+int sqlite3_vfs_find (int);
+int sqlite3_wal_autocheckpoint (int,int);
+int sqlite3_wal_checkpoint (int,int);
+int sqlite3_wal_checkpoint_v2 (int,int,int,int,int);
+int SystemNative_Access (int,int);
+int SystemNative_AlignedAlloc (int,int);
+void SystemNative_AlignedFree (int);
+int SystemNative_AlignedRealloc (int,int,int);
+int SystemNative_Calloc (int,int);
+int SystemNative_ChDir (int);
+int SystemNative_ChMod (int,int);
+int SystemNative_Close (int);
+int SystemNative_CloseDir (int);
+int SystemNative_ConvertErrorPalToPlatform (int);
+int SystemNative_ConvertErrorPlatformToPal (int);
+int SystemNative_CopyFile (int,int);
+int SystemNative_Dup (int);
+int SystemNative_FAllocate (int,int64_t,int64_t);
+int SystemNative_FChMod (int,int);
+int SystemNative_FcntlSetFD (int,int);
+int SystemNative_FLock (int,int);
+void SystemNative_Free (int);
+void SystemNative_FreeEnviron (int);
+int SystemNative_FStat (int,int);
+int SystemNative_FSync (int);
+int SystemNative_FTruncate (int,int64_t);
+int SystemNative_GetAddressFamily (int,int,int);
+int SystemNative_GetCpuUtilization (int);
+int SystemNative_GetCryptographicallySecureRandomBytes (int,int);
+int SystemNative_GetCwd (int,int);
+int SystemNative_GetEnv (int);
+int SystemNative_GetEnviron ();
+int SystemNative_GetErrNo ();
+int64_t SystemNative_GetFileSystemType (int);
+int SystemNative_GetIPSocketAddressSizes (int,int);
+int SystemNative_GetIPv4Address (int,int,int);
+int SystemNative_GetIPv6Address (int,int,int,int,int);
+void SystemNative_GetNonCryptographicallySecureRandomBytes (int,int);
+int SystemNative_GetPort (int,int,int);
+int SystemNative_GetReadDirRBufferSize ();
+int64_t SystemNative_GetSystemTimeAsTicks ();
+uint64_t SystemNative_GetTimestamp ();
+int SystemNative_LChflags (int,int);
+int SystemNative_LChflagsCanSetHiddenFlag ();
+int SystemNative_Link (int,int);
+int SystemNative_LockFileRegion (int,int64_t,int64_t,int);
+void SystemNative_Log (int,int);
+void SystemNative_LowLevelMonitor_Acquire (int);
+int SystemNative_LowLevelMonitor_Create ();
+void SystemNative_LowLevelMonitor_Destroy (int);
+void SystemNative_LowLevelMonitor_Release (int);
+void SystemNative_LowLevelMonitor_Signal_Release (int);
+int SystemNative_LowLevelMonitor_TimedWait (int,int);
+void SystemNative_LowLevelMonitor_Wait (int);
+int64_t SystemNative_LSeek (int,int64_t,int);
+int SystemNative_LStat (int,int);
+int SystemNative_MAdvise (int,uint64_t,int);
+int SystemNative_Malloc (int);
+int SystemNative_MkDir (int,int);
+int SystemNative_MksTemps (int,int);
+int SystemNative_MMap (int,uint64_t,int,int,int,int64_t);
+int SystemNative_MSync (int,uint64_t,int);
+int SystemNative_MUnmap (int,uint64_t);
+int SystemNative_Open (int,int,int);
+int SystemNative_OpenDir (int);
+int SystemNative_PosixFAdvise (int,int64_t,int64_t,int);
+int SystemNative_PRead (int,int,int,int64_t);
+int64_t SystemNative_PReadV (int,int,int,int64_t);
+int SystemNative_PWrite (int,int,int,int64_t);
+int64_t SystemNative_PWriteV (int,int,int,int64_t);
+int SystemNative_Read (int,int,int);
+int SystemNative_ReadDirR (int,int,int,int);
+int SystemNative_ReadLink (int,int,int);
+int SystemNative_Realloc (int,int);
+int SystemNative_Rename (int,int);
+int SystemNative_RmDir (int);
+int SystemNative_SetAddressFamily (int,int,int);
+void SystemNative_SetErrNo (int);
+int SystemNative_SetIPv4Address (int,int,int);
+int SystemNative_SetIPv6Address (int,int,int,int,int);
+int SystemNative_SetPort (int,int,int);
+int SystemNative_ShmOpen (int,int,int);
+int SystemNative_ShmUnlink (int);
+int SystemNative_Stat (int,int);
+int SystemNative_StrErrorR (int,int,int);
+int SystemNative_SymLink (int,int);
+int64_t SystemNative_SysConf (int);
+void SystemNative_SysLog (int,int,int);
+int SystemNative_Unlink (int);
+int SystemNative_UTimensat (int,int);
+int SystemNative_Write (int,int,int);
+static PinvokeImport e_sqlite3_imports [] = {
+{"sqlite3_aggregate_context", sqlite3_aggregate_context}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_aggregate_count", sqlite3_aggregate_count}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_backup_finish", sqlite3_backup_finish}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_backup_init", sqlite3_backup_init}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_backup_pagecount", sqlite3_backup_pagecount}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_backup_remaining", sqlite3_backup_remaining}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_backup_step", sqlite3_backup_step}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_blob", sqlite3_bind_blob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_double", sqlite3_bind_double}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_int", sqlite3_bind_int}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_int64", sqlite3_bind_int64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_null", sqlite3_bind_null}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_parameter_count", sqlite3_bind_parameter_count}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_parameter_index", sqlite3_bind_parameter_index}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_parameter_name", sqlite3_bind_parameter_name}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_text", sqlite3_bind_text}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_text16", sqlite3_bind_text16}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_bind_zeroblob", sqlite3_bind_zeroblob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_bytes", sqlite3_blob_bytes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_close", sqlite3_blob_close}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_open", sqlite3_blob_open}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_read", sqlite3_blob_read}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_reopen", sqlite3_blob_reopen}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_blob_write", sqlite3_blob_write}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_busy_timeout", sqlite3_busy_timeout}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_changes", sqlite3_changes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_clear_bindings", sqlite3_clear_bindings}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_close", sqlite3_close}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_close_v2", sqlite3_close_v2}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_blob", sqlite3_column_blob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_bytes", sqlite3_column_bytes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_count", sqlite3_column_count}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_decltype", sqlite3_column_decltype}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_double", sqlite3_column_double}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_int", sqlite3_column_int}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_int64", sqlite3_column_int64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_name", sqlite3_column_name}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_text", sqlite3_column_text}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_column_type", sqlite3_column_type}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_commit_hook", sqlite3_commit_hook}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_compileoption_get", sqlite3_compileoption_get}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_compileoption_used", sqlite3_compileoption_used}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_complete", sqlite3_complete}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_create_collation", sqlite3_create_collation}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_create_function_v2", sqlite3_create_function_v2}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_data_count", sqlite3_data_count}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_db_filename", sqlite3_db_filename}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_db_handle", sqlite3_db_handle}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_db_readonly", sqlite3_db_readonly}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_db_status", sqlite3_db_status}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_enable_load_extension", sqlite3_enable_load_extension}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_enable_shared_cache", sqlite3_enable_shared_cache}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_errcode", sqlite3_errcode}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_errmsg", sqlite3_errmsg}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_errstr", sqlite3_errstr}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_exec", sqlite3_exec}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_extended_errcode", sqlite3_extended_errcode}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_extended_result_codes", sqlite3_extended_result_codes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_file_control", sqlite3_file_control}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_finalize", sqlite3_finalize}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_free", sqlite3_free}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_get_autocommit", sqlite3_get_autocommit}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_hard_heap_limit64", sqlite3_hard_heap_limit64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_initialize", sqlite3_initialize}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_interrupt", sqlite3_interrupt}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_keyword_count", sqlite3_keyword_count}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_keyword_name", sqlite3_keyword_name}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_last_insert_rowid", sqlite3_last_insert_rowid}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_libversion", sqlite3_libversion}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_libversion_number", sqlite3_libversion_number}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_limit", sqlite3_limit}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_log", sqlite3_log}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_malloc", sqlite3_malloc}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_memory_highwater", sqlite3_memory_highwater}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_memory_used", sqlite3_memory_used}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_next_stmt", sqlite3_next_stmt}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_open", sqlite3_open}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_open_v2", sqlite3_open_v2}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_prepare_v2", sqlite3_prepare_v2}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_prepare_v3", sqlite3_prepare_v3}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_profile", sqlite3_profile}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_progress_handler", sqlite3_progress_handler}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_realloc", sqlite3_realloc}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_reset", sqlite3_reset}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_blob", sqlite3_result_blob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_double", sqlite3_result_double}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_error", sqlite3_result_error}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_error_code", sqlite3_result_error_code}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_error_nomem", sqlite3_result_error_nomem}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_error_toobig", sqlite3_result_error_toobig}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_int", sqlite3_result_int}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_int64", sqlite3_result_int64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_null", sqlite3_result_null}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_text", sqlite3_result_text}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_result_zeroblob", sqlite3_result_zeroblob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_rollback_hook", sqlite3_rollback_hook}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_set_authorizer", sqlite3_set_authorizer}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_shutdown", sqlite3_shutdown}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_soft_heap_limit64", sqlite3_soft_heap_limit64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_sourceid", sqlite3_sourceid}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_sql", sqlite3_sql}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_status", sqlite3_status}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_step", sqlite3_step}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_stmt_busy", sqlite3_stmt_busy}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_stmt_isexplain", sqlite3_stmt_isexplain}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_stmt_readonly", sqlite3_stmt_readonly}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_stmt_status", sqlite3_stmt_status}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_stricmp", sqlite3_stricmp}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_strnicmp", sqlite3_strnicmp}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_table_column_metadata", sqlite3_table_column_metadata}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_threadsafe", sqlite3_threadsafe}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_total_changes", sqlite3_total_changes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_trace", sqlite3_trace}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_update_hook", sqlite3_update_hook}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_user_data", sqlite3_user_data}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_blob", sqlite3_value_blob}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_bytes", sqlite3_value_bytes}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_double", sqlite3_value_double}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_int", sqlite3_value_int}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_int64", sqlite3_value_int64}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_text", sqlite3_value_text}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_value_type", sqlite3_value_type}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_vfs_find", sqlite3_vfs_find}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_wal_autocheckpoint", sqlite3_wal_autocheckpoint}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_wal_checkpoint", sqlite3_wal_checkpoint}, // BlazeOrbital.ManufacturingHub
+{"sqlite3_wal_checkpoint_v2", sqlite3_wal_checkpoint_v2}, // BlazeOrbital.ManufacturingHub
+{NULL, NULL}
+};
+static PinvokeImport librustqr_imports [] = {
+{"generate_qr_code", generate_qr_code}, // BlazeOrbital.ManufacturingHub
+{NULL, NULL}
+};
+static PinvokeImport libSystem_Native_imports [] = {
+{"SystemNative_Access", SystemNative_Access}, // System.Private.CoreLib
+{"SystemNative_AlignedAlloc", SystemNative_AlignedAlloc}, // System.Private.CoreLib
+{"SystemNative_AlignedFree", SystemNative_AlignedFree}, // System.Private.CoreLib
+{"SystemNative_AlignedRealloc", SystemNative_AlignedRealloc}, // System.Private.CoreLib
+{"SystemNative_Calloc", SystemNative_Calloc}, // System.Private.CoreLib
+{"SystemNative_ChDir", SystemNative_ChDir}, // System.Private.CoreLib
+{"SystemNative_ChMod", SystemNative_ChMod}, // System.Private.CoreLib
+{"SystemNative_Close", SystemNative_Close}, // System.Private.CoreLib
+{"SystemNative_CloseDir", SystemNative_CloseDir}, // System.Private.CoreLib
+{"SystemNative_ConvertErrorPalToPlatform", SystemNative_ConvertErrorPalToPlatform}, // System.Console, System.IO.Compression.ZipFile, System.IO.MemoryMappedFiles, System.Net.Primitives, System.Private.CoreLib
+{"SystemNative_ConvertErrorPlatformToPal", SystemNative_ConvertErrorPlatformToPal}, // System.Console, System.IO.Compression.ZipFile, System.IO.MemoryMappedFiles, System.Net.Primitives, System.Private.CoreLib
+{"SystemNative_CopyFile", SystemNative_CopyFile}, // System.Private.CoreLib
+{"SystemNative_Dup", SystemNative_Dup}, // System.Console
+{"SystemNative_FAllocate", SystemNative_FAllocate}, // System.Private.CoreLib
+{"SystemNative_FChMod", SystemNative_FChMod}, // System.IO.Compression.ZipFile
+{"SystemNative_FcntlSetFD", SystemNative_FcntlSetFD}, // System.IO.MemoryMappedFiles
+{"SystemNative_FLock", SystemNative_FLock}, // System.Private.CoreLib
+{"SystemNative_Free", SystemNative_Free}, // System.Private.CoreLib
+{"SystemNative_FreeEnviron", SystemNative_FreeEnviron}, // System.Private.CoreLib
+{"SystemNative_FStat", SystemNative_FStat}, // System.IO.Compression.ZipFile, System.IO.MemoryMappedFiles, System.Private.CoreLib
+{"SystemNative_FSync", SystemNative_FSync}, // System.Private.CoreLib
+{"SystemNative_FTruncate", SystemNative_FTruncate}, // System.IO.MemoryMappedFiles, System.Private.CoreLib
+{"SystemNative_GetAddressFamily", SystemNative_GetAddressFamily}, // System.Net.Primitives
+{"SystemNative_GetCpuUtilization", SystemNative_GetCpuUtilization}, // System.Private.CoreLib
+{"SystemNative_GetCryptographicallySecureRandomBytes", SystemNative_GetCryptographicallySecureRandomBytes}, // System.Private.CoreLib, System.Security.Cryptography.Algorithms
+{"SystemNative_GetCwd", SystemNative_GetCwd}, // System.Private.CoreLib
+{"SystemNative_GetEnv", SystemNative_GetEnv}, // System.Private.CoreLib
+{"SystemNative_GetEnviron", SystemNative_GetEnviron}, // System.Private.CoreLib
+{"SystemNative_GetErrNo", SystemNative_GetErrNo}, // System.Private.CoreLib
+{"SystemNative_GetFileSystemType", SystemNative_GetFileSystemType}, // System.Private.CoreLib
+{"SystemNative_GetIPSocketAddressSizes", SystemNative_GetIPSocketAddressSizes}, // System.Net.Primitives
+{"SystemNative_GetIPv4Address", SystemNative_GetIPv4Address}, // System.Net.Primitives
+{"SystemNative_GetIPv6Address", SystemNative_GetIPv6Address}, // System.Net.Primitives
+{"SystemNative_GetNonCryptographicallySecureRandomBytes", SystemNative_GetNonCryptographicallySecureRandomBytes}, // System.Private.CoreLib
+{"SystemNative_GetPort", SystemNative_GetPort}, // System.Net.Primitives
+{"SystemNative_GetReadDirRBufferSize", SystemNative_GetReadDirRBufferSize}, // System.Private.CoreLib
+{"SystemNative_GetSystemTimeAsTicks", SystemNative_GetSystemTimeAsTicks}, // System.Private.CoreLib
+{"SystemNative_GetTimestamp", SystemNative_GetTimestamp}, // System.Private.CoreLib
+{"SystemNative_LChflags", SystemNative_LChflags}, // System.Private.CoreLib
+{"SystemNative_LChflagsCanSetHiddenFlag", SystemNative_LChflagsCanSetHiddenFlag}, // System.Private.CoreLib
+{"SystemNative_Link", SystemNative_Link}, // System.Private.CoreLib
+{"SystemNative_LockFileRegion", SystemNative_LockFileRegion}, // System.Private.CoreLib
+{"SystemNative_Log", SystemNative_Log}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Acquire", SystemNative_LowLevelMonitor_Acquire}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Create", SystemNative_LowLevelMonitor_Create}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Destroy", SystemNative_LowLevelMonitor_Destroy}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Release", SystemNative_LowLevelMonitor_Release}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Signal_Release", SystemNative_LowLevelMonitor_Signal_Release}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_TimedWait", SystemNative_LowLevelMonitor_TimedWait}, // System.Private.CoreLib
+{"SystemNative_LowLevelMonitor_Wait", SystemNative_LowLevelMonitor_Wait}, // System.Private.CoreLib
+{"SystemNative_LSeek", SystemNative_LSeek}, // System.Private.CoreLib
+{"SystemNative_LStat", SystemNative_LStat}, // System.Private.CoreLib
+{"SystemNative_MAdvise", SystemNative_MAdvise}, // System.IO.MemoryMappedFiles
+{"SystemNative_Malloc", SystemNative_Malloc}, // System.Private.CoreLib
+{"SystemNative_MkDir", SystemNative_MkDir}, // System.Private.CoreLib
+{"SystemNative_MksTemps", SystemNative_MksTemps}, // System.Private.CoreLib
+{"SystemNative_MMap", SystemNative_MMap}, // System.IO.MemoryMappedFiles
+{"SystemNative_MSync", SystemNative_MSync}, // System.IO.MemoryMappedFiles
+{"SystemNative_MUnmap", SystemNative_MUnmap}, // System.IO.MemoryMappedFiles
+{"SystemNative_Open", SystemNative_Open}, // System.Private.CoreLib
+{"SystemNative_OpenDir", SystemNative_OpenDir}, // System.Private.CoreLib
+{"SystemNative_PosixFAdvise", SystemNative_PosixFAdvise}, // System.Private.CoreLib
+{"SystemNative_PRead", SystemNative_PRead}, // System.Private.CoreLib
+{"SystemNative_PReadV", SystemNative_PReadV}, // System.Private.CoreLib
+{"SystemNative_PWrite", SystemNative_PWrite}, // System.Private.CoreLib
+{"SystemNative_PWriteV", SystemNative_PWriteV}, // System.Private.CoreLib
+{"SystemNative_Read", SystemNative_Read}, // System.Private.CoreLib
+{"SystemNative_ReadDirR", SystemNative_ReadDirR}, // System.Private.CoreLib
+{"SystemNative_ReadLink", SystemNative_ReadLink}, // System.Private.CoreLib
+{"SystemNative_Realloc", SystemNative_Realloc}, // System.Private.CoreLib
+{"SystemNative_Rename", SystemNative_Rename}, // System.Private.CoreLib
+{"SystemNative_RmDir", SystemNative_RmDir}, // System.Private.CoreLib
+{"SystemNative_SetAddressFamily", SystemNative_SetAddressFamily}, // System.Net.Primitives
+{"SystemNative_SetErrNo", SystemNative_SetErrNo}, // System.Private.CoreLib
+{"SystemNative_SetIPv4Address", SystemNative_SetIPv4Address}, // System.Net.Primitives
+{"SystemNative_SetIPv6Address", SystemNative_SetIPv6Address}, // System.Net.Primitives
+{"SystemNative_SetPort", SystemNative_SetPort}, // System.Net.Primitives
+{"SystemNative_ShmOpen", SystemNative_ShmOpen}, // System.IO.MemoryMappedFiles
+{"SystemNative_ShmUnlink", SystemNative_ShmUnlink}, // System.IO.MemoryMappedFiles
+{"SystemNative_Stat", SystemNative_Stat}, // System.Private.CoreLib
+{"SystemNative_StrErrorR", SystemNative_StrErrorR}, // Microsoft.Win32.Primitives, System.Console, System.IO.Compression.ZipFile, System.IO.MemoryMappedFiles, System.Net.Primitives, System.Private.CoreLib
+{"SystemNative_SymLink", SystemNative_SymLink}, // System.Private.CoreLib
+{"SystemNative_SysConf", SystemNative_SysConf}, // System.IO.MemoryMappedFiles, System.Private.CoreLib
+{"SystemNative_SysLog", SystemNative_SysLog}, // System.Private.CoreLib
+{"SystemNative_Unlink", SystemNative_Unlink}, // System.IO.MemoryMappedFiles, System.Private.CoreLib
+{"SystemNative_UTimensat", SystemNative_UTimensat}, // System.Private.CoreLib
+{"SystemNative_Write", SystemNative_Write}, // System.Console, System.Private.CoreLib
+{NULL, NULL}
+};
+static PinvokeImport libSystem_IO_Compression_Native_imports [] = {
+{"CompressionNative_Crc32", CompressionNative_Crc32}, // System.IO.Compression
+{"CompressionNative_Deflate", CompressionNative_Deflate}, // System.IO.Compression, System.Net.WebSockets
+{"CompressionNative_DeflateEnd", CompressionNative_DeflateEnd}, // System.IO.Compression, System.Net.WebSockets
+{"CompressionNative_DeflateInit2_", CompressionNative_DeflateInit2_}, // System.IO.Compression, System.Net.WebSockets
+{"CompressionNative_Inflate", CompressionNative_Inflate}, // System.IO.Compression, System.Net.WebSockets
+{"CompressionNative_InflateEnd", CompressionNative_InflateEnd}, // System.IO.Compression, System.Net.WebSockets
+{"CompressionNative_InflateInit2_", CompressionNative_InflateInit2_}, // System.IO.Compression, System.Net.WebSockets
+{NULL, NULL}
+};
+static PinvokeImport libSystem_Globalization_Native_imports [] = {
+{"GlobalizationNative_ChangeCase", GlobalizationNative_ChangeCase}, // System.Private.CoreLib
+{"GlobalizationNative_ChangeCaseInvariant", GlobalizationNative_ChangeCaseInvariant}, // System.Private.CoreLib
+{"GlobalizationNative_ChangeCaseTurkish", GlobalizationNative_ChangeCaseTurkish}, // System.Private.CoreLib
+{"GlobalizationNative_CloseSortHandle", GlobalizationNative_CloseSortHandle}, // System.Private.CoreLib
+{"GlobalizationNative_CompareString", GlobalizationNative_CompareString}, // System.Private.CoreLib
+{"GlobalizationNative_EndsWith", GlobalizationNative_EndsWith}, // System.Private.CoreLib
+{"GlobalizationNative_EnumCalendarInfo", GlobalizationNative_EnumCalendarInfo}, // System.Private.CoreLib
+{"GlobalizationNative_GetCalendarInfo", GlobalizationNative_GetCalendarInfo}, // System.Private.CoreLib
+{"GlobalizationNative_GetCalendars", GlobalizationNative_GetCalendars}, // System.Private.CoreLib
+{"GlobalizationNative_GetDefaultLocaleName", GlobalizationNative_GetDefaultLocaleName}, // System.Private.CoreLib
+{"GlobalizationNative_GetICUVersion", GlobalizationNative_GetICUVersion}, // System.Private.CoreLib
+{"GlobalizationNative_GetJapaneseEraStartDate", GlobalizationNative_GetJapaneseEraStartDate}, // System.Private.CoreLib
+{"GlobalizationNative_GetLatestJapaneseEra", GlobalizationNative_GetLatestJapaneseEra}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocaleInfoGroupingSizes", GlobalizationNative_GetLocaleInfoGroupingSizes}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocaleInfoInt", GlobalizationNative_GetLocaleInfoInt}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocaleInfoString", GlobalizationNative_GetLocaleInfoString}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocaleName", GlobalizationNative_GetLocaleName}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocales", GlobalizationNative_GetLocales}, // System.Private.CoreLib
+{"GlobalizationNative_GetLocaleTimeFormat", GlobalizationNative_GetLocaleTimeFormat}, // System.Private.CoreLib
+{"GlobalizationNative_GetSortHandle", GlobalizationNative_GetSortHandle}, // System.Private.CoreLib
+{"GlobalizationNative_GetSortKey", GlobalizationNative_GetSortKey}, // System.Private.CoreLib
+{"GlobalizationNative_GetSortVersion", GlobalizationNative_GetSortVersion}, // System.Private.CoreLib
+{"GlobalizationNative_IndexOf", GlobalizationNative_IndexOf}, // System.Private.CoreLib
+{"GlobalizationNative_InitICUFunctions", GlobalizationNative_InitICUFunctions}, // System.Private.CoreLib
+{"GlobalizationNative_InitOrdinalCasingPage", GlobalizationNative_InitOrdinalCasingPage}, // System.Private.CoreLib
+{"GlobalizationNative_IsNormalized", GlobalizationNative_IsNormalized}, // System.Private.CoreLib
+{"GlobalizationNative_IsPredefinedLocale", GlobalizationNative_IsPredefinedLocale}, // System.Private.CoreLib
+{"GlobalizationNative_LastIndexOf", GlobalizationNative_LastIndexOf}, // System.Private.CoreLib
+{"GlobalizationNative_LoadICU", GlobalizationNative_LoadICU}, // System.Private.CoreLib
+{"GlobalizationNative_NormalizeString", GlobalizationNative_NormalizeString}, // System.Private.CoreLib
+{"GlobalizationNative_StartsWith", GlobalizationNative_StartsWith}, // System.Private.CoreLib
+{"GlobalizationNative_ToAscii", GlobalizationNative_ToAscii}, // System.Private.CoreLib
+{"GlobalizationNative_ToUnicode", GlobalizationNative_ToUnicode}, // System.Private.CoreLib
+{NULL, NULL}
+};
+static void *pinvoke_tables[] = { e_sqlite3_imports,librustqr_imports,libSystem_Native_imports,libSystem_IO_Compression_Native_imports,libSystem_Globalization_Native_imports,};
+static char *pinvoke_names[] = { "e_sqlite3","librustqr","libSystem.Native","libSystem.IO.Compression.Native","libSystem.Globalization.Native",};
+InterpFtnDesc wasm_native_to_interp_ftndescs[14];
+typedef void  (*WasmInterpEntrySig_0) (int*,int*,int*,int*,int*,int*);
+int wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_exec_hook_bridge_impl (int arg0,int arg1,int arg2,int arg3) { 
+int res;
+((WasmInterpEntrySig_0)wasm_native_to_interp_ftndescs [0].func) (&res, &arg0, &arg1, &arg2, &arg3, wasm_native_to_interp_ftndescs [0].arg);
+return res;
+}
+typedef void  (*WasmInterpEntrySig_1) (int*,int*,int*);
+int wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_commit_hook_bridge_impl (int arg0) { 
+int res;
+((WasmInterpEntrySig_1)wasm_native_to_interp_ftndescs [1].func) (&res, &arg0, wasm_native_to_interp_ftndescs [1].arg);
+return res;
+}
+typedef void  (*WasmInterpEntrySig_2) (int*,int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_scalar_function_hook_bridge_impl (int arg0,int arg1,int arg2) { 
+((WasmInterpEntrySig_2)wasm_native_to_interp_ftndescs [2].func) (&arg0, &arg1, &arg2, wasm_native_to_interp_ftndescs [2].arg);
+}
+typedef void  (*WasmInterpEntrySig_3) (int*,int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_log_hook_bridge_impl (int arg0,int arg1,int arg2) { 
+((WasmInterpEntrySig_3)wasm_native_to_interp_ftndescs [3].func) (&arg0, &arg1, &arg2, wasm_native_to_interp_ftndescs [3].arg);
+}
+typedef void  (*WasmInterpEntrySig_4) (int*,int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_step_hook_bridge_impl (int arg0,int arg1,int arg2) { 
+((WasmInterpEntrySig_4)wasm_native_to_interp_ftndescs [4].func) (&arg0, &arg1, &arg2, wasm_native_to_interp_ftndescs [4].arg);
+}
+typedef void  (*WasmInterpEntrySig_5) (int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_final_hook_bridge_impl (int arg0) { 
+((WasmInterpEntrySig_5)wasm_native_to_interp_ftndescs [5].func) (&arg0, wasm_native_to_interp_ftndescs [5].arg);
+}
+typedef void  (*WasmInterpEntrySig_6) (int*,int*,int*,int*,int*,int*,int*);
+int wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_collation_hook_bridge_impl (int arg0,int arg1,int arg2,int arg3,int arg4) { 
+int res;
+((WasmInterpEntrySig_6)wasm_native_to_interp_ftndescs [6].func) (&res, &arg0, &arg1, &arg2, &arg3, &arg4, wasm_native_to_interp_ftndescs [6].arg);
+return res;
+}
+typedef void  (*WasmInterpEntrySig_7) (int*,int*,int*,int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_update_hook_bridge_impl (int arg0,int arg1,int arg2,int arg3,int64_t arg4) { 
+((WasmInterpEntrySig_7)wasm_native_to_interp_ftndescs [7].func) (&arg0, &arg1, &arg2, &arg3, &arg4, wasm_native_to_interp_ftndescs [7].arg);
+}
+typedef void  (*WasmInterpEntrySig_8) (int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_rollback_hook_bridge_impl (int arg0) { 
+((WasmInterpEntrySig_8)wasm_native_to_interp_ftndescs [8].func) (&arg0, wasm_native_to_interp_ftndescs [8].arg);
+}
+typedef void  (*WasmInterpEntrySig_9) (int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_trace_hook_bridge_impl (int arg0,int arg1) { 
+((WasmInterpEntrySig_9)wasm_native_to_interp_ftndescs [9].func) (&arg0, &arg1, wasm_native_to_interp_ftndescs [9].arg);
+}
+typedef void  (*WasmInterpEntrySig_10) (int*,int*,int*,int*);
+void wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_profile_hook_bridge_impl (int arg0,int arg1,int64_t arg2) { 
+((WasmInterpEntrySig_10)wasm_native_to_interp_ftndescs [10].func) (&arg0, &arg1, &arg2, wasm_native_to_interp_ftndescs [10].arg);
+}
+typedef void  (*WasmInterpEntrySig_11) (int*,int*,int*);
+int wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_progress_handler_hook_bridge_impl (int arg0) { 
+int res;
+((WasmInterpEntrySig_11)wasm_native_to_interp_ftndescs [11].func) (&res, &arg0, wasm_native_to_interp_ftndescs [11].arg);
+return res;
+}
+typedef void  (*WasmInterpEntrySig_12) (int*,int*,int*,int*,int*,int*,int*,int*);
+int wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_authorizer_hook_bridge_impl (int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) { 
+int res;
+((WasmInterpEntrySig_12)wasm_native_to_interp_ftndescs [12].func) (&res, &arg0, &arg1, &arg2, &arg3, &arg4, &arg5, wasm_native_to_interp_ftndescs [12].arg);
+return res;
+}
+typedef void  (*WasmInterpEntrySig_13) (int*,int*,int*);
+void wasm_native_to_interp_System_Private_CoreLib_CalendarData_EnumCalendarInfoCallback (int arg0,int arg1) { 
+((WasmInterpEntrySig_13)wasm_native_to_interp_ftndescs [13].func) (&arg0, &arg1, wasm_native_to_interp_ftndescs [13].arg);
+}
+static void *wasm_native_to_interp_funcs[] = { wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_exec_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_commit_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_scalar_function_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_log_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_step_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_final_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_collation_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_update_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_rollback_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_trace_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_profile_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_progress_handler_hook_bridge_impl,wasm_native_to_interp_SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_authorizer_hook_bridge_impl,wasm_native_to_interp_System_Private_CoreLib_CalendarData_EnumCalendarInfoCallback,};
+static const char *wasm_native_to_interp_map[] = { "SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_exec_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_commit_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_scalar_function_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_log_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_step_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_agg_function_final_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_collation_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_update_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_rollback_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_trace_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_profile_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_progress_handler_hook_bridge_impl",
+"SQLitePCLRaw_provider_dynamic_cdecl_SQLite3Provider_dynamic_cdecl_authorizer_hook_bridge_impl",
+"System_Private_CoreLib_CalendarData_EnumCalendarInfoCallback",
+};

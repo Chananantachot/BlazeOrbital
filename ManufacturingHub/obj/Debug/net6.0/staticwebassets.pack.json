@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/bin/Debug/net6.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/obj/Debug/net6.0/compressed/dfdqk9at5c.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/obj/Debug/net6.0/scopedcss/bundle/BlazeOrbital.ManufacturingHub.styles.css",
+      "PackagePath": "staticwebassets/BlazeOrbital.ManufacturingHub.styles.css"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/appsettings.json",
+      "PackagePath": "staticwebassets/appsettings.json"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/blazeorbital-logo-simple.svg",
+      "PackagePath": "staticwebassets/blazeorbital-logo-simple.svg"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/blazeorbital-logo.svg",
+      "PackagePath": "staticwebassets/blazeorbital-logo.svg"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/css/tailwind.bundled.min.css",
+      "PackagePath": "staticwebassets/css/tailwind.bundled.min.css"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/dashboard/graph1.png",
+      "PackagePath": "staticwebassets/dashboard/graph1.png"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/dashboard/graph2.png",
+      "PackagePath": "staticwebassets/dashboard/graph2.png"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/dbstorage.js",
+      "PackagePath": "staticwebassets/dbstorage.js"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/icon-512.png",
+      "PackagePath": "staticwebassets/icon-512.png"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/manifest.json",
+      "PackagePath": "staticwebassets/manifest.json"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/service-worker.js",
+      "PackagePath": "staticwebassets/service-worker.js"
+    },
+    {
+      "Id": "/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/wwwroot/service-worker.published.js",
+      "PackagePath": "staticwebassets/service-worker.published.js"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.BlazeOrbital.ManufacturingHub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.BlazeOrbital.ManufacturingHub.props",
+      "PackagePath": "build\\BlazeOrbital.ManufacturingHub.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.BlazeOrbital.ManufacturingHub.props",
+      "PackagePath": "buildMultiTargeting\\BlazeOrbital.ManufacturingHub.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.BlazeOrbital.ManufacturingHub.props",
+      "PackagePath": "buildTransitive\\BlazeOrbital.ManufacturingHub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

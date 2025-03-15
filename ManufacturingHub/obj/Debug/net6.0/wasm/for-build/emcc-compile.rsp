@@ -1,0 +1,12 @@
+-O1
+-s DISABLE_EXCEPTION_CATCHING=0
+-g
+-v
+-DLINK_ICALLS=1
+-DCORE_BINDINGS
+-DGEN_PINVOKE=1
+-emit-llvm
+"-I/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/obj/Debug/net6.0/wasm/for-build"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.36/runtimes/browser-wasm/native/include/mono-2.0"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.36/runtimes/browser-wasm/native/include/wasm"
+-g

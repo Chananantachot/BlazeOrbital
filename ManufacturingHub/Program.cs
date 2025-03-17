@@ -8,7 +8,7 @@ using BlazeOrbital.ManufacturingHub.Pages.Inventory;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 var backendOrigin = builder.Configuration["BackendOrigin"]!;
-builder.RootComponents.RegisterAsCustomElement<App>("blazor-app");
+builder.RootComponents.RegisterCustomElement<App>("blazor-app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 // Supply HttpClient instances that include access tokens when making requests to the server project
@@ -37,6 +37,6 @@ builder.Services.AddScoped<AccountClaimsPrincipalFactory<RemoteUserAccount>, Off
 builder.Services.AddManufacturingDataDbContext();
 
 // Declare a custom element for the Mission Control app
-builder.RootComponents.RegisterAsCustomElement<Inventory>("inventory-grid");
+builder.RootComponents.RegisterCustomElement<Inventory>("inventory-grid");
 
 await builder.Build().RunAsync();

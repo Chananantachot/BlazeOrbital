@@ -1,4 +1,5 @@
-﻿@if (Part is not null)
+﻿
+@if (Part is not null)
 {
     <div class="darken-bg inset-0 z-10 fixed top-0 flex justify-center items-center" @onclick="OnHide">
         <div tabindex="0" @ref="overlayElement" class="overlay bg-gray-200 relative shadow-lg" @onclick:stopPropagation>
@@ -11,7 +12,8 @@
             <section class="py-4 px-6 uppercase text-lg">
                 <div class="stock-label bg-white p-8 shadow-lg border border-gray-600 max-w-xl">
                     <div class="w-36 h-36 mb-4">
-                        <QRCode Value="@Part.Url" />
+                       <PinguApps.Blazor.QRCode.QRCode Data="@Part.Url" Size="150px" />
+                        @* <QRCode Value="@Part.Url" /> *@
                     </div>
 
                     <p class="text-gray-500 my-2">@Part.Category ▸ @Part.Subcategory</p>
@@ -30,7 +32,7 @@
 
     ElementReference overlayElement;
     bool wasShownBefore;
-
+   
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         // Whenever we're becoming visible, take focus

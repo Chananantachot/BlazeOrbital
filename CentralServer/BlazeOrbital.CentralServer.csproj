@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.14" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
     <PackageReference Include="Grpc.AspNetCore.Web" Version="2.40.0" />
+    <ProjectReference Include="../ServiceDefaults/ServiceDefaults.csproj" />
     <Protobuf Include="Manufacturing.proto" GrpcServices="Server" />
   </ItemGroup>
   <ItemGroup>

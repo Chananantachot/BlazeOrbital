@@ -1,0 +1,13 @@
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/bin/Debug/net8.0/ServiceDefaults.deps.json
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/bin/Debug/net8.0/ServiceDefaults.dll
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/bin/Debug/net8.0/ServiceDefaults.pdb
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.csproj.AssemblyReference.cache
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.AssemblyInfoInputs.cache
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.AssemblyInfo.cs
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.sourcelink.json
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.dll
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/refint/ServiceDefaults.dll
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ServiceDefaults.pdb
+/Users/achananantachot/Downloads/BlazeOrbital/ServiceDefaults/obj/Debug/net8.0/ref/ServiceDefaults.dll

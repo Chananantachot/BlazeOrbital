@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "Hash": "zufusZsW6IolaK0wGvhQogfbt21XjKAFt31x7zxH+m8=",
+  "Source": "QuickGrid",
+  "BasePath": "_content/QuickGrid",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/Grid.razor.js",
+      "SourceId": "QuickGrid",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/",
+      "BasePath": "_content/QuickGrid",
+      "RelativePath": "Grid.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ibpz2sbf5c",
+      "Integrity": "EvOov0l1/Lqvfys1eR5jKA7eIuGnpf9T2gVQcTLJfEE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "Grid.razor.js"
+    },
+    {
+      "Identity": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/bundle/QuickGrid.styles.css",
+      "SourceId": "QuickGrid",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/bundle/",
+      "BasePath": "_content/QuickGrid",
+      "RelativePath": "QuickGrid#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "1zrz12lvht",
+      "Integrity": "XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/bundle/QuickGrid.styles.css"
+    },
+    {
+      "Identity": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/projectbundle/QuickGrid.bundle.scp.css",
+      "SourceId": "QuickGrid",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "BasePath": "_content/QuickGrid",
+      "RelativePath": "QuickGrid#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "1zrz12lvht",
+      "Integrity": "XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/projectbundle/QuickGrid.bundle.scp.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Grid.razor.js",
+      "AssetFile": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/Grid.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EvOov0l1/Lqvfys1eR5jKA7eIuGnpf9T2gVQcTLJfEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 05:07:39 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EvOov0l1/Lqvfys1eR5jKA7eIuGnpf9T2gVQcTLJfEE="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "QuickGrid.1zrz12lvht.bundle.scp.css",
+      "AssetFile": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/projectbundle/QuickGrid.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 07:21:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1zrz12lvht"
+        },
+        {
+          "Name": "label",
+          "Value": "QuickGrid.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg="
+        }
+      ]
+    },
+    {
+      "Route": "QuickGrid.1zrz12lvht.styles.css",
+      "AssetFile": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/bundle/QuickGrid.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 07:21:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1zrz12lvht"
+        },
+        {
+          "Name": "label",
+          "Value": "QuickGrid.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg="
+        }
+      ]
+    },
+    {
+      "Route": "QuickGrid.bundle.scp.css",
+      "AssetFile": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/projectbundle/QuickGrid.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 07:21:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg="
+        }
+      ]
+    },
+    {
+      "Route": "QuickGrid.styles.css",
+      "AssetFile": "/Users/achananantachot/Downloads/BlazeOrbital/QuickGrid/obj/Debug/net6.0/scopedcss/bundle/QuickGrid.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 19 Mar 2025 07:21:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XXGTonqZOCRS6Zldzl1903/7S3I18JrRrSZ8fszKnwg="
+        }
+      ]
+    }
+  ]
+}

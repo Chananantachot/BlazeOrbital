@@ -1,0 +1,12 @@
+-O0
+-g
+-v
+-fwasm-exceptions
+-DDISABLE_PERFTRACING_LISTEN_PORTS=1
+-DLINK_ICALLS=1
+-DGEN_PINVOKE=1
+-emit-llvm
+"-I/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/obj/Debug/net8.0/wasm/for-build"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/8.0.14/runtimes/browser-wasm/native/include/mono-2.0"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/8.0.14/runtimes/browser-wasm/native/include/wasm"
+-g

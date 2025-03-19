@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazeOrbital.ManufacturingHub
+build_property.RootNamespace = BlazeOrbital.ManufacturingHub
+build_property.ProjectDir = /Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Designs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVzaWducy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Inventory/SyncStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW52ZW50b3J5L1N5bmNTdGF0dXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Workflow.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV29ya2Zsb3cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Layout/App.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0FwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-95ycszq56l
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Layout/HeaderBar.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0hlYWRlckJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-kpyc8s43a3
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Layout/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0xvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-luuah7vcsc
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Inventory/Inventory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW52ZW50b3J5L0ludmVudG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zc8xytnq63
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Inventory/PartDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW52ZW50b3J5L1BhcnREZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-nbvaf4xfwc
+
+[/Users/achananantachot/Downloads/BlazeOrbital/ManufacturingHub/Pages/Inventory/QRCode.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW52ZW50b3J5L1FSQ29kZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cfad7mnxzy

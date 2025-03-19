@@ -1,0 +1,2 @@
+obj/Debug/net8.0/Manufacturing.cs \
+obj/Debug/net8.0/ManufacturingGrpc.cs: ../CentralServer/Manufacturing.proto

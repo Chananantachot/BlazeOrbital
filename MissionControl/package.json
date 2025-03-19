@@ -45,8 +45,7 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "prestart": "node aspnetcore-https && node aspnetcore-react",
-    "start": "craco start",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",

@@ -5,7 +5,7 @@ var manufacturing = builder.AddProject<Projects.BlazeOrbital_ManufacturingHub>("
         .WithReference(centralServer);
 
 builder.AddNpmApp("missioncontrol", "/Users/achananantachot/Downloads/BlazeOrbital/MissionControl")
-        .WithEndpoint(port: 4200, scheme: "https", env: "PORT")
+        .WithEndpoint(port: 44423, scheme: "https", env: "PORT")
         .WithReference(centralServer)
         .WaitFor(manufacturing)
         .WithEnvironment("BROWSER", "none") 

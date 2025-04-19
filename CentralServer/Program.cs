@@ -58,4 +58,8 @@ app.MapGrpcService<ManufacturingDataService>().EnableGrpcWeb();
 app.MapRazorPages();
 app.MapControllers();
 
+//app.UseBlazorFrameworkFiles();
+//app.MapFallbackToFile("index.html");
+
+
 app.Run();

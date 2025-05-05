@@ -2,11 +2,15 @@
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
+		<!-- <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize> -->
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<ServiceWorkerAssetsManifest Condition="'$(Configuration)' == 'Release'">service-worker-assets.js</ServiceWorkerAssetsManifest>
 	</PropertyGroup>
-
+	<PropertyGroup>
+	<WasmEnableWebcil>false</WasmEnableWebcil>
+	<!-- <CompressionEnabled>false</CompressionEnabled> -->
+	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.CustomElements" Version="9.0.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="9.0.4" />
@@ -25,11 +29,13 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="PinguApps.Blazor.QRCode" Version="1.1.3" />
-		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.11" />
-		<Protobuf Include="..\CentralServer\Manufacturing.proto" GrpcServices="Client" />
+		<PackageReference Include="SQLitePCLRaw.Bundle_e_sqlite3" Version="2.1.7" />
+		<!-- <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.11" /> -->
+		<!-- <Protobuf Include="..\CentralServer\Manufacturing.proto" GrpcServices="Client" /> -->
+		<Protobuf Include="Manufacturing.proto" GrpcServices="Client" />
 
 		<!-- EF Core and Sqlite -->
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
 		<!-- <NativeFileReference Include="Data\e_sqlite3.o" /> -->
 
 		<!-- <NativeFileReference Include="../rustqr/target/wasm32-unknown-emscripten/debug/librustqr.a" />  -->

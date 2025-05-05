@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  centralserver:
+    build:
+      context: ./CentralServer
+      dockerfile: Dockerfile
+    ports:
+      - "7087:443"
+  
+  manufacturinghub:
+    build:
+      context: ./ManufacturingHub
+      dockerfile: Dockerfile
+    ports:
+      - "7070:443"
+    depends_on:
+      - centralserver

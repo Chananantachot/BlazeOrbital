@@ -8,11 +8,11 @@ namespace BlazeOrbital.Data;
 [Authorize]
 public class ManufacturingDataService : ManufacturingData.ManufacturingDataBase
 {
-    private readonly ApplicationDbContext db;
+    private readonly ApplicationDbContext _db;
 
     public ManufacturingDataService(ApplicationDbContext db)
     {
-        this.db = db;
+        _db = db;
     }
 
     public override Task<DashboardReply> GetDashboardData(DashboardRequest request, ServerCallContext context)
@@ -30,7 +30,7 @@ public class ManufacturingDataService : ManufacturingData.ManufacturingDataBase
 
     public override async Task<PartsReply> GetParts(PartsRequest request, ServerCallContext context)
     {
-        var modifiedParts = db.Parts
+        var modifiedParts = _db.Parts
             .OrderBy(p => p.ModifiedTicks)
             .Where(p => p.ModifiedTicks > request.ModifiedSinceTicks);
 

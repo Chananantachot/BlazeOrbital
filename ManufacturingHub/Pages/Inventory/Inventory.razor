@@ -10,9 +10,9 @@
 @if (db is not null)
 {
     <div class="inventory-grid">
-        <Grid Virtualize="true" Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
-
-            <TemplateColumn Title="Category" SortBy="@(items => items.SortByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
+        <QuickGrid Virtualize="true" Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
+         
+            <TemplateColumn Title="Category" SortBy="@(GridSort<Part>.ByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
                 <ChildContent>@context.Category / @context.Subcategory</ChildContent>
                 <ColumnOptions>
                     <p>Category (@categories.Length)</p>
@@ -54,7 +54,7 @@
 
             <PropertyColumn Title="Cost ($)" Property="@(x => x.PriceCents/100)" Format="N0" Align="Align.Right" Class="col-cost" />
 
-        </Grid>
+        </QuickGrid>
         <div class="status-bar">
             Showing @GetFilteredParts()?.Count().ToString("N0") items
         </div>

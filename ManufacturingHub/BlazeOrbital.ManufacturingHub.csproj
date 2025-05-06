@@ -4,7 +4,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		 <Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<PublishTrimmed>false</PublishTrimmed>
+		<PublishTrimmed>true</PublishTrimmed>
 		<BlazorEnableCompression>true</BlazorEnableCompression>
 		<RunAOTCompilation>true</RunAOTCompilation>
 		<!--<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize>-->

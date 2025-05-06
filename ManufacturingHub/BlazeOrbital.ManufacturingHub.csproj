@@ -2,14 +2,14 @@
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
-		<!-- <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize> -->
-		<Nullable>enable</Nullable>
+		 <Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<PublishTrimmed>true</PublishTrimmed>
+		<BlazorEnableCompression>true</BlazorEnableCompression>
+		<RunAOTCompilation>true</RunAOTCompilation>
+		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize>
+		<WasmEnableWebcil>true</WasmEnableWebcil>
 		<ServiceWorkerAssetsManifest Condition="'$(Configuration)' == 'Release'">service-worker-assets.js</ServiceWorkerAssetsManifest>
-	</PropertyGroup>
-	<PropertyGroup>
-	<WasmEnableWebcil>false</WasmEnableWebcil>
-	<!-- <CompressionEnabled>false</CompressionEnabled> -->
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.CustomElements" Version="9.0.2" />

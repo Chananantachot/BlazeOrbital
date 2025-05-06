@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 COPY . ./
-RUN dotnet publish -c Release --wasm-aot -o /app/publish
+RUN dotnet publish -c Release -o /app/publish
 
 # Stage 2: Define output for the build artifacts
 FROM alpine AS output

@@ -3,6 +3,9 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 COPY . ./
+# BEFORE dotnet publish step
+RUN dotnet workload restore
+
 RUN dotnet publish -c Release -o /app/publish
 
 # Stage 2: Define output for the build artifacts

@@ -15,7 +15,7 @@ services:
       - "7070:443"
     depends_on:
       - nginx
-      - centralserver
+      #- centralserver
     volumes:
       - blazor_wwwroot:/usr/share/nginx/html  # Ensures the files are accessible in the right location
 

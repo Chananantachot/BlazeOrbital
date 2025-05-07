@@ -1,11 +1,11 @@
 version: '3.8'
 services:
-  centralserver:
-    build:
-      context: ./CentralServer
-      dockerfile: Dockerfile
-    ports:
-      - "7087:443"
+  #centralserver:
+    #build:
+      #context: ./CentralServer
+      #dockerfile: Dockerfile
+    #ports:
+      #- "7087:443"
 
   manufacturinghub:
     build:

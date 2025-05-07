@@ -25,7 +25,8 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      #- ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/:/etc/nginx/
       - ./nginx.crt:/etc/nginx/ssl/nginx.crt
       - ./nginx.key:/etc/nginx/ssl/nginx.key
       - blazor_wwwroot:/usr/share/nginx/html

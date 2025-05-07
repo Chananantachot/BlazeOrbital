@@ -6,6 +6,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7087:443"
+    extra_hosts:
+      - "centralserver.local:192.168.56.10"
+      - "manufacturinghub.local:192.168.56.11"   
+    networks:
+      - blazeorbital   
 
   manufacturinghub:
     build:
@@ -16,9 +21,14 @@ services:
     depends_on:
       - nginx
       - centralserver
+    extra_hosts:
+      - "centralserver.local:192.168.56.10"
+      - "manufacturinghub.local:192.168.56.11"  
     volumes:
       - blazor_wwwroot:/usr/share/nginx/html  # Ensures the files are accessible in the right location
-
+    networks:
+      - blazeorbital
+      
   nginx:
     image: nginx:1.13.12-alpine
     ports:
@@ -30,6 +40,15 @@ services:
       - ./nginx.crt:/etc/nginx/ssl/nginx.crt
       - ./nginx.key:/etc/nginx/ssl/nginx.key
       - blazor_wwwroot:/usr/share/nginx/html
-
+    extra_hosts:
+      - "centralserver.local:192.168.56.10"
+      - "manufacturinghub.local:192.168.56.11"
+    networks:
+      - blazeorbital  
+      
 volumes:
   blazor_wwwroot:  # This ensures Docker recognizes it properly
+
+networks:
+  blazeorbital:
+    driver: bridge

@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . ./
 # BEFORE dotnet publish step
-RUN dotnet workload restore
+#RUN dotnet workload restore
 
 RUN dotnet publish -c Release -o /app/publish
 

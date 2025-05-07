@@ -1,10 +1,16 @@
 # Stage 1: Build the Blazor WebAssembly project
+# Install Python (used by some .NET SDK tools)
+RUN apt-get update && apt-get install -y python3 python3-pip python3-venv
+
+# Ensure python is available in PATH
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 COPY . ./
 # BEFORE dotnet publish step
-#RUN dotnet workload restore
+RUN dotnet workload restore
 
 RUN dotnet publish -c Release -o /app/publish
 

@@ -4,13 +4,13 @@
 		<TargetFramework>net9.0</TargetFramework>
 		 <Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<PublishTrimmed>true</PublishTrimmed> 
+		<!-- <PublishTrimmed>true</PublishTrimmed> 
 		<BlazorEnableCompression>true</BlazorEnableCompression>
 		<RunAOTCompilation>true</RunAOTCompilation>
 		<WasmEnableWebcil>true</WasmEnableWebcil>
 		<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
 		<WasmEnableExceptionHandling>false</WasmEnableExceptionHandling>
-		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize>
+		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize> -->
 		<ServiceWorkerAssetsManifest Condition="'$(Configuration)' == 'Release'">service-worker-assets.js</ServiceWorkerAssetsManifest>
 	</PropertyGroup>
 	<ItemGroup>

@@ -18,9 +18,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7070:443"
-    depends_on:
-      - nginx
-      - centralserver
+    #depends_on:
+      #- nginx
+      #- centralserver
     extra_hosts:
       - "centralserver.local:192.168.56.10"
       - "manufacturinghub.local:192.168.56.11"  

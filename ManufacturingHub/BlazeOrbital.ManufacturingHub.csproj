@@ -8,7 +8,9 @@
 		<BlazorEnableCompression>true</BlazorEnableCompression>
 		<RunAOTCompilation>true</RunAOTCompilation>
 		<WasmEnableWebcil>true</WasmEnableWebcil>
-		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize>
+		<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
+		<WasmEnableExceptionHandling>false</WasmEnableExceptionHandling>
+		<EmccMaximumHeapSize>3073741824</EmccMaximumHeapSize>
 		<ServiceWorkerAssetsManifest Condition="'$(Configuration)' == 'Release'">service-worker-assets.js</ServiceWorkerAssetsManifest>
 	</PropertyGroup>
 	<ItemGroup>

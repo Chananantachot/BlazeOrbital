@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "4096"
+    vb.cpus = 2
+  end
+
+config.vm.network "forwarded_port", guest: 7070, host: 443
+config.vm.network "forwarded_port", guest: 7087, host: 443
+
+config.vm.provision "shell", name: "install-dependencies", path: "install-dependencies.sh"
+
+config.vm.provision "shell", name: "start-blazeorbital", inline: <<-SHELL
+  cd /home/blazeorbital/BlazeOrbital
+  docker compose up -d
+SHELL
+
+config.vm.provision "shell", name: "restart-blazeorbital", run: "never", inline: <<-SHELL
+  cd /home/blazeorbital/BlazeOrbital
+  docker compose restart
+SHELL
+
+config.vm.provision "shell", name: "reload-blazeorbital", run: "never", inline: <<-SHELL
+  sudo /usr/local/bin/reload-blazeorbital
+SHELL
+
+end

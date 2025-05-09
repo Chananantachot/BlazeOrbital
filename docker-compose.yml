@@ -5,12 +5,18 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7087:443"
-
+    extra_hosts:
+      - "centralserver.local:192.168.56.10"
+      - "manufacturinghub.local:192.168.56.11"   
+    
   manufacturinghub:
     build:
       context: ./ManufacturingHub
       dockerfile: Dockerfile
     ports:
       - "7070:443"
+    extra_hosts:
+      - "centralserver.local:192.168.56.10"
+      - "manufacturinghub.local:192.168.56.11"     
     #depends_on:
      # - centralserver

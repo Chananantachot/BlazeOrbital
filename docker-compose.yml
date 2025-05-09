@@ -12,5 +12,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7070:443"
-    depends_on:
-      - centralserver
+    #depends_on:
+     # - centralserver

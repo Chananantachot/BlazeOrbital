@@ -3,19 +3,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using BlazeOrbital.CentralServer.Data;
 using BlazeOrbital.Data;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.DataProtection;
-using System.Security.Cryptography.X509Certificates;
-
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //builder.AddServiceDefaults();
 builder.Services.AddDataProtection()
-    .PersistKeysToFileSystem(new DirectoryInfo("/keys"))
-    
     .SetApplicationName("CentralServer");
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -29,7 +25,6 @@ builder.Services
 
 builder.Services
     .AddIdentityServer()
-    .AddDeveloperSigningCredential()
     .AddApiAuthorization<IdentityUser, ApplicationDbContext>();
 
 builder.Services
@@ -41,12 +36,12 @@ builder.Services
         options.Audience = builder.Configuration["IdentityServer:Audience"];
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
+            ValidateIssuer = false,
             ValidIssuer = builder.Configuration["IdentityServer:IssuerUri"],
-            ValidateAudience = true,
-            ValidAudience = builder.Configuration["IdentityServer:ApiName"],
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true
+            ValidateAudience = false,
+            ValidAudience = builder.Configuration["IdentityServer:Audience"],
+            ValidateLifetime = false,
+            ValidateIssuerSigningKey = false
         };
         options.Events = new JwtBearerEvents
         {
@@ -67,7 +62,7 @@ builder.Services
 builder.Services.AddGrpc();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-
+builder.Services.AddQuickGridEntityFrameworkAdapter();
 var app = builder.Build();
 SeedData.EnsureSeeded(app.Services);
 

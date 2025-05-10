@@ -1,4 +1,7 @@
 ﻿@page "/inventory"
+
+@using Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter
+@using Microsoft.AspNetCore.Components.QuickGrid
 @using Microsoft.EntityFrameworkCore
 @inject DataSynchronizer DataSynchronizer
 @implements IDisposable
@@ -35,11 +38,16 @@
                 </ColumnOptions>
             </TemplateColumn>
 
-            <PropertyColumn Title="Name" Property="@(x => x.Name)" Class="col-name" OnCellClicked="@((Part part) => { selectedPart = part; })">
+            <TemplateColumn Title="Name" Class="col-name">
+                <ChildContent>
+                    <div @onclick="@(() => { selectedPart = context; })" style="cursor: pointer;">
+                        @context.Name
+                    </div>
+                </ChildContent>
                 <ColumnOptions>
                     <input @bind="searchName" @bind:event="oninput" type="search" placeholder="Search..." />
                 </ColumnOptions>
-            </PropertyColumn>
+            </TemplateColumn>
 
             <PropertyColumn Title="Location" Property="@(x => x.Location)" Class="col-location" />
 
@@ -79,7 +87,7 @@
             return null;
         }
 
-        var result = db.Parts.AsNoTracking().AsQueryable();
+        var result = db.Parts.AsQueryable();
         if (categories.Any())
         {
             result = result.Where(x => categories.Contains(x.Category));

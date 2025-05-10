@@ -17,10 +17,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app/out .
 
-# Set environment variables for HTTPS
-ENV ASPNETCORE_URLS=https://+:443;http://+:8080
-ENV ASPNETCORE_HTTPS_PORT=443
-
 # Copy HTTPS certificate
 COPY certificate.pfx /app/
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/app/certificate.pfx

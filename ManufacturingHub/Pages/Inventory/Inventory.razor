@@ -6,6 +6,7 @@
 @inject DataSynchronizer DataSynchronizer
 @implements IDisposable
 @attribute [Authorize]
+
 <PageTitle>Inventory</PageTitle>
 <SyncStatus />
 <PartDetails Part="selectedPart" OnHide="@(() => { selectedPart = null; })" />
@@ -13,8 +14,7 @@
 @if (db is not null)
 {
     <div class="inventory-grid">
-        <QuickGrid Virtualize="true" Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
-         
+        <QuickGrid Virtualize="true"  Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
             <TemplateColumn Title="Category" SortBy="@(GridSort<Part>.ByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
                 <ChildContent>@context.Category / @context.Subcategory</ChildContent>
                 <ColumnOptions>

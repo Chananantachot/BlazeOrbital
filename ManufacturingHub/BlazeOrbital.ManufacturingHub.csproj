@@ -5,13 +5,14 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<WasmBuildNative>true</WasmBuildNative>
-		<PublishTrimmed>true</PublishTrimmed> 
+		<!-- <PublishTrimmed>true</PublishTrimmed> 
 		<BlazorEnableCompression>true</BlazorEnableCompression>
 		<RunAOTCompilation>true</RunAOTCompilation>
 		<WasmEnableWebcil>true</WasmEnableWebcil>
 		<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
 		<WasmEnableExceptionHandling>false</WasmEnableExceptionHandling>
-		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize> 
+		<EmccMaximumHeapSize>1073741824</EmccMaximumHeapSize>  -->
+		
 		<ServiceWorkerAssetsManifest Condition="'$(Configuration)' == 'Release'">service-worker-assets.js</ServiceWorkerAssetsManifest>
 	</PropertyGroup>
 	<ItemGroup>
@@ -20,7 +21,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="9.0.4" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.3" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="9.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="9.0.4" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="9.0.3" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="9.0.3" />
 
@@ -35,7 +36,7 @@
 		<PackageReference Include="PinguApps.Blazor.QRCode" Version="1.1.3" />
 		<Protobuf Include="Manufacturing.proto" GrpcServices="Client" />
 		<!-- EF Core and Sqlite -->
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.3" />
 	</ItemGroup>
 	<ItemGroup>
 		<ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />

@@ -21,7 +21,11 @@ COPY --from=build /app/out .
 COPY certificate.pfx /app/
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/app/certificate.pfx
 ENV ASPNETCORE_Kestrel__Certificates__Default__Password=PfxPassword
-# Expose port 44423 for HTTP traffic
+
+ENV ASPNETCORE_URLS=https://+:443
+ENV ASPNETCORE_HTTPS_PORT=443
+
+# Expose port 443 for HTTP traffic
 EXPOSE 8080
 EXPOSE 443
 # Define the entry point for the container

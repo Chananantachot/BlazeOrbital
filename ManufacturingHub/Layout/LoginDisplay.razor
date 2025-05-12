@@ -2,7 +2,6 @@
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using BlazeOrbital.ManufacturingHub.Data
 @inject NavigationManager Navigation
-@inject SignOutSessionStateManager SignOutManager
 @inject IJSRuntime JS
 @inject IConfiguration Configuration
 
@@ -33,7 +32,7 @@
 @code{
     private async Task BeginSignOut(MouseEventArgs args)
     {
-        await SignOutManager.SetSignOutState();
+        Navigation.NavigateToLogout("authentication/logout");
         await JS.InvokeVoidAsync("localStorage.removeItem", OfflineAccountClaimsPrincipalFactory.OfflineClaimsKey);
         Navigation.NavigateTo("authentication/logout");
     }

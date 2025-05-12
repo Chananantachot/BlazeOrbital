@@ -1,8 +1,10 @@
 ﻿@page "/inventory"
+@using QuickGrid
 @using Microsoft.EntityFrameworkCore
 @inject DataSynchronizer DataSynchronizer
 @implements IDisposable
 @attribute [Authorize]
+
 <PageTitle>Inventory</PageTitle>
 <SyncStatus />
 <PartDetails Part="selectedPart" OnHide="@(() => { selectedPart = null; })" />
@@ -11,7 +13,6 @@
 {
     <div class="inventory-grid">
         <Grid Virtualize="true" Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
-
             <TemplateColumn Title="Category" SortBy="@(items => items.SortByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
                 <ChildContent>@context.Category / @context.Subcategory</ChildContent>
                 <ColumnOptions>

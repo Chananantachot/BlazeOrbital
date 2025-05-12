@@ -1,7 +1,5 @@
 ﻿@page "/inventory"
-
-@using Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter
-@using Microsoft.AspNetCore.Components.QuickGrid
+@using QuickGrid
 @using Microsoft.EntityFrameworkCore
 @inject DataSynchronizer DataSynchronizer
 @implements IDisposable
@@ -14,8 +12,8 @@
 @if (db is not null)
 {
     <div class="inventory-grid">
-        <QuickGrid Virtualize="true"  Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
-            <TemplateColumn Title="Category" SortBy="@(GridSort<Part>.ByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
+        <Grid Virtualize="true" Items="@GetFilteredParts()" ItemKey="@(x => x.PartId)" ItemSize="35">
+            <TemplateColumn Title="Category" SortBy="@(items => items.SortByAscending(x => x.Category).ThenAscending(x => x.Subcategory))" Class="col-category">
                 <ChildContent>@context.Category / @context.Subcategory</ChildContent>
                 <ColumnOptions>
                     <p>Category (@categories.Length)</p>
@@ -38,16 +36,11 @@
                 </ColumnOptions>
             </TemplateColumn>
 
-            <TemplateColumn Title="Name" Class="col-name">
-                <ChildContent>
-                    <div @onclick="@(() => { selectedPart = context; })" style="cursor: pointer;">
-                        @context.Name
-                    </div>
-                </ChildContent>
+            <PropertyColumn Title="Name" Property="@(x => x.Name)" Class="col-name" OnCellClicked="@((Part part) => { selectedPart = part; })">
                 <ColumnOptions>
                     <input @bind="searchName" @bind:event="oninput" type="search" placeholder="Search..." />
                 </ColumnOptions>
-            </TemplateColumn>
+            </PropertyColumn>
 
             <PropertyColumn Title="Location" Property="@(x => x.Location)" Class="col-location" />
 
@@ -62,7 +55,7 @@
 
             <PropertyColumn Title="Cost ($)" Property="@(x => x.PriceCents/100)" Format="N0" Align="Align.Right" Class="col-cost" />
 
-        </QuickGrid>
+        </Grid>
         <div class="status-bar">
             Showing @GetFilteredParts()?.Count().ToString("N0") items
         </div>
@@ -87,7 +80,7 @@
             return null;
         }
 
-        var result = db.Parts.AsQueryable();
+        var result = db.Parts.AsNoTracking().AsQueryable();
         if (categories.Any())
         {
             result = result.Where(x => categories.Contains(x.Category));

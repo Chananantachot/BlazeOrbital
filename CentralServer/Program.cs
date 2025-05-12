@@ -36,25 +36,12 @@ builder.Services
         options.Audience = builder.Configuration["IdentityServer:Audience"];
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false,
+            ValidateIssuer = true,
             ValidIssuer = builder.Configuration["IdentityServer:IssuerUri"],
-            ValidateAudience = false,
+            ValidateAudience = true,
             ValidAudience = builder.Configuration["IdentityServer:Audience"],
-            ValidateLifetime = false,
+            ValidateLifetime = true,
             ValidateIssuerSigningKey = false
-        };
-        options.Events = new JwtBearerEvents
-        {
-            OnAuthenticationFailed = context =>
-            {
-                Console.WriteLine($"Authentication failed: {context.Exception.Message}");
-                return Task.CompletedTask;
-            },
-            OnChallenge = context =>
-            {
-                Console.WriteLine($"Authentication challenge: {context.Error}");
-                return Task.CompletedTask;
-            }
         };
     })
     .AddIdentityServerJwt();

@@ -10,7 +10,7 @@ builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 var backendOrigin = builder.Configuration["BackendOrigin"]!;
 builder.RootComponents.RegisterCustomElement<App>("blazor-app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
-builder.Services.AddQuickGridEntityFrameworkAdapter();
+//builder.Services.AddQuickGridEntityFrameworkAdapter();
 // Supply HttpClient instances that include access tokens when making requests to the server project
 builder.Services
     .AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("BlazeOrbital.CentralServerAPI"))

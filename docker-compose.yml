@@ -5,7 +5,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "7087:443"
-    
+    environment:
+      - ASPNETCORE_URLS=https://+:443
+      
   manufacturinghub:
     build:
       context: ./ManufacturingHub

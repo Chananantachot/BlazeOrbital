@@ -97,6 +97,24 @@ blazor-app {
     padding: 1rem;
 }
 
+.centered {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unathorize {
+    margin-top: 320px;
+    margin-bottom: auto;
+}
+
+.loggedout {
+    width:max-content;
+    margin-top: 320px; 
+    margin-bottom: auto; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 @media (min-width: 767px) { /* Equivalent to Tailwind's 'md' */
     .page {
         padding: 1.5rem 2.25rem;

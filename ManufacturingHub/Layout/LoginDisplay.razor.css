@@ -26,3 +26,7 @@
     opacity: 1;
     transform: scaleY(1);
 }
+
+.w-48 {
+    width: 13rem;
+}
